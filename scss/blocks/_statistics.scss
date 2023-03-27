@@ -1,0 +1,51 @@
+.statistics {
+	max-width: 1120px;
+    background: $white;
+    border: 1px solid #E7EAEB;
+    border-radius: $radius;
+	min-height: 172px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 50px 132px;
+
+}
+.student {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-right: 1px, solid #134454;
+
+		&__title {
+			@include text($ffAdd, 700, 40px, 50px, $darkBlue);
+		}
+
+		&__desc {
+			@include text($ffMain, 400, 16px, 20px, $darkGreyBlue);
+		}
+}
+.lectures {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+
+		&__title {
+			@include text($ffAdd, 700, 40px, 50px, $darkBlue);
+		}
+
+		&__desc {
+			@include text($ffMain, 400, 16px, 20px, $darkGreyBlue);
+		}
+}
+.reviews {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+
+		&__title {
+			@include text($ffAdd, 700, 40px, 50px, $darkBlue);
+		}
+
+		&__desc {@include text($ffMain, 400, 16px, 20px, $darkGreyBlue);
+		}
+}

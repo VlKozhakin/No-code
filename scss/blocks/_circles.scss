@@ -1,0 +1,38 @@
+.circles {
+    margin-top: 100px;
+    margin-bottom: 105px;
+    position: relative;
+
+    &__big {
+        position: absolute;
+        width: 382px;
+        height: 382px;
+        border-radius: 50%;
+        background: linear-gradient(35.71deg, #FFD7A9 9.11%, #FFAE70 71.64%);
+        margin-top: 171px;
+        right:-248px;
+
+    }
+
+    &__average {
+        position: absolute;
+        width: 288px;
+        height: 288px;
+        border-radius: 50%;
+        background: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
+        left: -46px;        
+        margin-top: 20px;
+        z-index: 0;
+    }
+
+    &__small {
+        position: absolute;
+        width: 86px;
+        height: 86px;
+        border-radius: 50%;
+        background: linear-gradient(35.71deg, #FFD7A9 9.11%, #FFAE70 71.64%);
+        margin-top: 222px; 
+        left: 156px;
+        
+    }
+}
