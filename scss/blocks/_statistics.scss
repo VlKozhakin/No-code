@@ -1,20 +1,27 @@
 .statistics {
+	position: relative;
+	z-index: 1;
 	max-width: 1120px;
     background: $white;
     border: 1px solid #E7EAEB;
     border-radius: $radius;
 	min-height: 172px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 50px 132px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 30px 0;
+	@include mobile{
+		margin-inline: auto;
+   }
+	
 
 }
 .student {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	border-right: 1px, solid #134454;
+	padding: 20px ;
+	max-width: 100%;
+	border-right: 1px solid #E7EAEB;
 
 		&__title {
 			@include text($ffAdd, 700, 40px, 50px, $darkBlue);
@@ -23,11 +30,33 @@
 		&__desc {
 			@include text($ffMain, 400, 16px, 20px, $darkGreyBlue);
 		}
+
+		@include desktop-small {
+			&__title {
+				@include text($ffAdd, 700, 35px, 50px, $darkBlue);
+			}
+	
+			&__desc {
+				@include text($ffMain, 400, 14px, 20px, $darkGreyBlue);
+			}
+		}
+		@include mobile{
+			&__title {
+				@include text($ffAdd, 700, 25px, 50px, $darkBlue);
+			}
+	
+			&__desc {
+				@include text($ffMain, 400, 12px, 20px, $darkGreyBlue);
+			}
+	   }
 }
 .lectures {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	padding: 20px ;
+	max-width: 100%;
+	border-right: 1px solid #E7EAEB;
 
 		&__title {
 			@include text($ffAdd, 700, 40px, 50px, $darkBlue);
@@ -35,17 +64,55 @@
 
 		&__desc {
 			@include text($ffMain, 400, 16px, 20px, $darkGreyBlue);
+		}
+		@include desktop-small {
+			&__title {
+				@include text($ffAdd, 700, 35px, 50px, $darkBlue);
+			}
+	
+			&__desc {
+				@include text($ffMain, 400, 14px, 20px, $darkGreyBlue);
+			}
+		}
+		@include mobile{
+			&__title {
+				@include text($ffAdd, 700, 25px, 50px, $darkBlue);
+			}
+	
+			&__desc {
+				@include text($ffMain, 400, 12px, 20px, $darkGreyBlue);
+			}
 		}
 }
 .reviews {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	padding: 20px ;
+	max-width: 100%;
 
 		&__title {
 			@include text($ffAdd, 700, 40px, 50px, $darkBlue);
 		}
 
 		&__desc {@include text($ffMain, 400, 16px, 20px, $darkGreyBlue);
+		}
+		@include desktop-small {
+			&__title {
+				@include text($ffAdd, 700, 35px, 50px, $darkBlue);
+			}
+	
+			&__desc {
+				@include text($ffMain, 400, 14px, 20px, $darkGreyBlue);
+			}
+		}
+		@include mobile{
+			&__title {
+				@include text($ffAdd, 700, 25px, 50px, $darkBlue);
+			}
+	
+			&__desc {
+				@include text($ffMain, 400, 12px, 20px, $darkGreyBlue);
+			}
 		}
 }

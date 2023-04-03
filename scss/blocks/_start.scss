@@ -1,0 +1,76 @@
+.start {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__learnbig {
+        position: absolute;
+        z-index: -2;
+        width: 355px;
+        height: 355px;
+        border-radius: 50%;
+        background: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
+        right: -201px;
+    }
+
+    &__learnsmoll {
+        position: absolute;
+        z-index: -1;
+        width: 123px;
+        height: 123px;
+        border-radius: 50%;
+        background: linear-gradient(35.71deg, #FFD7A9 9.11%, #FFAE70 71.64%);
+        right: 31px;
+    }
+
+    &__money {
+        background: rgba(255, 215, 169, 0.2);
+        mix-blend-mode: normal;
+        border-radius: 33px;
+        padding: 8px 35px;
+        margin-bottom: 57px;
+       
+    }
+
+     &__title {
+        @include text($ffAdd, 700, 46px, 56px, $darkBlue );
+        max-width: 650px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+     
+
+
+}
+
+.btn {
+     background: rgba(205, 16,  255, 1);
+     border-radius: 33px;
+     padding: 20px 49px;
+
+    &__started {
+        @include text($ffMain, 700, 20px, 25px, $white );
+    }
+}
+       
+    
+
+   
+
+
+.money {
+     &__desc {
+        background: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-emphasis-color: transparent;
+        @include text($ffAdd, 700, 12px, 15px, $purpleGrad );
+        letter-spacing: 2.57143px;
+        text-transform: uppercase;
+}
+}
+    
+

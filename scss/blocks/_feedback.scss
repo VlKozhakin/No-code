@@ -1,0 +1,65 @@
+.feedback {
+    background: linear-gradient(44.11deg, #CD10FF 15.75%, #CD10FF 15.76%, #9F06FF 84.63%);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+    @include text($ffAdd, 700, 46px, 56px, $white);
+}
+.desc {
+    display: flex;
+    text-align: center;
+    margin-inline: auto;
+    margin-bottom: 89px;
+    max-width: 560px;
+    margin-top: 31px;
+    @include text($ffMain, 400, 20px, 30px, $white);
+    opacity: 0.8;
+}
+
+.carusel {
+    padding: 0 150px;
+}
+
+.owl-carousel {
+    
+}
+
+.owl-theme {
+    
+}
+
+.item {
+    max-width: 100%;
+    background: rgba(76, 0, 112, 0.195968);
+    border-radius: 20px;
+    padding: 50px ;
+    margin-bottom: 120px;
+    @include text($ffMain, 400, 20px, 30px, $white);
+}
+
+.founder {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 30px;
+
+		&__img {
+            width: 60px;
+            height: 60px;
+		}
+
+		&__name {
+            margin-bottom: 4px;
+            @include text($ffMain, 700, 16px, 20px, $white);
+		}
+
+		&__text {
+            @include text($ffMain, 400, 16px, 20px, $white);
+		}
+}
+
+.info {
+}

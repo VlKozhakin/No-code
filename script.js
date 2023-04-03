@@ -5,10 +5,11 @@ function navToggle() {
 
 
 $('.owl-carousel').owlCarousel({
-    items:4,
+    items:2.3,
     lazyLoad:true,
     loop:true,
-    margin:10
+    margin:20,
+    dots:false,
 });
 
 

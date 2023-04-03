@@ -1,0 +1,158 @@
+.learn {
+      max-width: 1140px;
+      width: 100%;
+    position: relative;
+    z-index: 1;
+    margin-top: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+   
+
+		&__title {
+            @include text($ffAdd, 700, 46px, 56px, $darkBlue);
+		}
+		&__desc {
+            @include text($ffMain, 400, 20px, 30px, $darkGreyBlue);
+            max-width: 560px;
+            text-align: center;
+            margin-top: 20px;
+		}
+}
+.items {
+    display: grid;
+    gap: 30px;
+    
+    
+	  &__aud {
+            background-color: rgba(205, 16, 255, 0.05);
+            mix-blend-mode: normal;
+            border-radius: 21px;
+            display: flex;
+            align-items: center;
+            padding: 0 50px;
+            gap: 20px;
+             @include tablet-small{
+			display: flex;
+                  flex-direction: column;
+                  text-align: center;
+                  padding: 10px 20px;
+		}
+		}
+           
+
+        &__up {
+            background-color: rgba(205, 16, 255, 0.05);
+            mix-blend-mode: normal;
+            border-radius: 21px;
+            display: flex;
+            align-items: center;
+            padding: 0 50px;
+            gap: 20px;
+            @include tablet-small{
+			display: flex;
+                  flex-direction: column;
+                  text-align: center;
+                  padding: 10px 20px;
+		}
+		}
+            
+
+        &__pt {
+            background-color: rgba(205, 16, 255, 0.05);
+            mix-blend-mode: normal;
+            border-radius: 21px;
+            display: flex;
+            align-items: center;
+            padding: 0 50px;
+            gap: 20px;
+            @include tablet-small{
+			display: flex;
+                  flex-direction: column;
+                  text-align: center;
+                  padding: 10px 20px;
+		}
+		}
+           
+
+        &__sb {
+            background-color: rgba(205, 16, 255, 0.05);
+            mix-blend-mode: normal;
+            border-radius: 21px;
+            display: flex;
+            align-items: center;
+            padding: 0 50px;
+            gap: 20px;
+            @include tablet-small{
+			display: flex;
+                  flex-direction: column;
+                  text-align: center;
+                  padding: 10px 20px;
+		}
+		}
+            
+	  &__img {
+            background: white;
+            min-width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+		}
+
+	  &__video {
+                  @include text($ffMain, 600, 16px, 20px, $white);
+                  border-right: 1px solid #8639B5;
+                  padding: 0 38px;
+                  @include mobile{
+                       padding: 0 15px;
+                   }
+		}
+
+
+	  &__hours {
+                  @include text($ffMain, 600, 16px, 20px, $white);
+                  padding: 0 34px;
+                  @include mobile{
+                        padding: 0 15px;
+                    }
+		}	
+}
+.content {
+
+		&__title {
+                  @include text($ffAdd, 700, 24px, 24px, $darkBlue);
+                  margin-top: 39px;
+		}
+
+		&__desc {
+                  @include text($ffMain, 400, 16px, 24px, $darkGreyBlue);
+                  max-width: 501px;
+                  margin-bottom: 41px;
+		}
+            @include mobile{
+                  &__title {
+                        @include text($ffAdd, 700, 20px, 24px, $darkBlue);
+                        margin-top: 39px;
+                  }
+      
+                  &__desc {
+                        @include text($ffMain, 400, 14px, 24px, $darkGreyBlue);
+                        max-width: 355px;
+                        margin-bottom: 41px;
+                  }
+             }
+}
+.btn {
+      background: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
+      border-radius: 33px;
+      padding: 23px 0;
+      @include desktop-small {
+            max-width: 145px;
+      }
+      @include tablet-small{
+           max-width: 100%;
+      }
+}
